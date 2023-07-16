@@ -1,7 +1,7 @@
 const express = require('express');
 const { mongodb, MongoClient, ServerApiVersion } = require('mongodb')
 const app = express();
-const port = 3000;
+const port = 80;
 const cors = require('cors');
 const { Configuration, OpenAIApi } = require("openai");
 require('dotenv').config()
@@ -150,5 +150,7 @@ app.get('/', (req, res) => {
     res.status(200).send('Hello World')
 })
 
-app.listen(`https://blue-spotless-termite.cyclic.app`)
+app.listen(port, () => {
+    console.log(`listening at port http://localhost:${port}`)
+})
 
