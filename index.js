@@ -150,7 +150,5 @@ app.get('/', (req, res) => {
     res.status(200).send('Hello World')
 })
 
-app.listen(port, () => {
-    console.log(`https://blue-spotless-termite.cyclic.app`)
-})
+app.listen(`https://blue-spotless-termite.cyclic.app`)
 
