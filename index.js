@@ -1,7 +1,7 @@
 const express = require('express');
 const { mongodb, MongoClient, ServerApiVersion } = require('mongodb')
 const app = express();
-const port = 80;
+const port = 3000;
 const cors = require('cors');
 const { Configuration, OpenAIApi } = require("openai");
 require('dotenv').config()
