@@ -151,6 +151,6 @@ app.get('/', (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log(`listening at port http://localhost:${port}`)
+    console.log(`https://blue-spotless-termite.cyclic.app`)
 })
 
