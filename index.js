@@ -146,7 +146,8 @@ app.post('/iconUpdate', async (req, res) => {
     }
     console.log('IconUpdate')
 })
-app.get('/', (req, res) => {
+app.get('/download', (req, res) => {
+    // const { message } = req.body
     res.status(200).send('Hello World')
 })
 
